@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import MainPage from './pages/MainPage';
 
 
 function App() {
@@ -8,8 +11,6 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={ <MainPage /> } />
-        <Route path="/admin/words" element={ <ManageWords /> } />
-        <Route path="/admin/words/:wordId" element={ <EditWords /> } />
       </Routes>
     </>
   )
